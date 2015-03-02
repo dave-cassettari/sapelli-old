@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SapelliCollectorProject id="000001" name="Project 20150207" version="0.1" defaultLanguage="en-GB">
+  <Configuration>
+	<Logging enabled="true" />
+	<Transmission>
+		<SMSUpload enabled="true" relay="5556" allowRoaming="true" />
+	</Transmission>
+  </Configuration>
+  <Form id="Survey">
+    <Choice id="TransportMode" cols="1">
+      <Choice img="private.svg" value="Private">
+        <Choice img="motorised.svg" value="Motorised" rows="3">
+          <Choice img="car.svg" value="Car"/>
+          <Choice img="motorcycle.svg" value="Motorcycle"/>
+          <Choice img="scooter.svg" value="Scooter"/>
+        </Choice>
+        <Choice img="unmotorised.svg" value="Unmotorised" rows="3">
+          <Choice img="bicycle.svg" value="Bicycle"/>
+          <Choice img="skateboard.svg" value="Skateboard"/>
+          <Choice img="walking.svg" value="Walking" jump="Confirmation"/>
+        </Choice>
+      </Choice>
+      <Choice img="public.svg" value="Public" cols="2">
+        <Choice img="bus.svg" value="Bus"/>
+        <Choice img="tram.svg" value="Tram"/>
+        <Choice img="subway.svg" value="Subway"/>
+        <Choice img="train.svg" value="Train"/>
+      </Choice>
+    </Choice>
+    <!--<Photo id="Picture" max="1" optional="true"/>-->
+    <!--<Location id="Position" type="GPS" timeout="120" optional="true"/>-->
+    <Choice id="Confirmation" noColumn="true" showCancel="false" showForward="false">
+      <Choice img="ok.svg" alt="Confirm" showBack="false" showCancel="false" showForward="false">
+        <Choice img="restart.svg" alt="Another" jump="_SAVE+LOOPFORM"/>
+        <Choice img="exit.svg" alt="Exit" jump="_SAVE+EXITAPP"/>
+      </Choice>
+      <Choice img="cancel.svg" alt="Discard" jump="_LOOPFORM"/>
+    </Choice>
+  </Form>
+</SapelliCollectorProject>
