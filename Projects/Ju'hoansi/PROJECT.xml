@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SapelliCollectorProject id="000001" name="Ju'hoansi" version="0.1" defaultLanguage="en-GB">
   <Configuration>
-	<Logging enabled="true" />
-	<Transmission>
-		<SMSUpload enabled="true" relay="5556" allowRoaming="true" />
-		<Encryption enabled="true" />
-	</Transmission>
+<Logging enabled="true" />
+<Transmission>
+<SMSUpload enabled="true" relay="5556" allowRoaming="true" />
+<Encryption enabled="true" />
+</Transmission>
   </Configuration>
-  <Form id="Survey" audioFeedback="long_click">
+  <Form id="Survey" audioFeedback="sequential">
     <Choice id="Data" cols="1">
       <Choice img="Poaching.svg" answerDescription="Poaching.mp3" caption="Poaching" rows="3">
-        <Choice img="Poaching - Horse Tracks.svg" 		answerDescription="Poaching - Horse Tracks.mp3" 		caption="Horse Tracks" 		value="Poaching, Horse Tracks" />
-        <Choice img="Poaching - Bullet Cartridges.svg" 	answerDescription="Poaching - Bullet Cartridges.mp3" 	caption="Bullet Cartridges" value="Poaching, Bullet Cartridges" />
-        <Choice img="Poaching - Actual Poachers.svg" 	answerDescription="Poaching - Actual Poachers.mp3" 		caption="Actual Poachers" 	value="Poaching, Actual Poachers" />
+        <Choice img="Poaching - Horse Tracks.svg" answerDescription="Poaching - Horse Tracks.mp3" caption="Horse Tracks" value="Poaching, Horse Tracks" />
+        <Choice img="Poaching - Bullet Cartridges.svg" answerDescription="Poaching - Bullet Cartridges.mp3" caption="Bullet Cartridges" value="Poaching, Bullet Cartridges" />
+        <Choice img="Poaching - Actual Poachers.svg" answerDescription="Poaching - Actual Poachers.mp3" caption="Actual Poachers" value="Poaching, Actual Poachers" />
       </Choice>
       <Choice img="Invasion.svg" answerDescription="Invasion.mp3" caption="Invasion" rows="2">
-        <Choice img="Invasion - Cow.svg" 				answerDescription="Invasion - Cow.mp3" 					caption="Cow" 				value="Invasion, Cow" />
-        <Choice img="Invasion - Cut Fence.svg" 			answerDescription="Invasion - Cut Fence.mp3" 			caption="Cut Fence" 		value="Invasion, Cut Fence" />
+        <Choice img="Invasion - Cow.svg" answerDescription="Invasion - Cow.mp3" caption="Cow" value="Invasion, Cow" />
+        <Choice img="Invasion - Cut Fence.svg" answerDescription="Invasion - Cut Fence.mp3" caption="Cut Fence" value="Invasion, Cut Fence" />
       </Choice>
     </Choice>
     <Photo id="Photo" optional="false" />
     <!--<Location id="Position" type="GPS" timeout="120" optional="true" />-->
     <Choice id="Control" noColumn="true" showCancel="false" showForward="false">
       <Choice img="Control - OK.svg" answerDescription="Control - OK.mp3" caption="OK" showBack="false" showCancel="false" showForward="false">
-        <Choice img="Control - Restart.svg" answerDescription="Control - Restart.mp3" 	aption="Restart" 	jump="_SAVE+LOOPFORM"/>
-        <Choice img="Control - Send.svg"	answerDescription="Control - Send.mp3" 		caption="Send" 		jump="_SAVE+EXITAPP"/>
+        <Choice img="Control - Restart.svg" answerDescription="Control - Restart.mp3" aption="Restart" jump="_SAVE+LOOPFORM"/>
+        <Choice img="Control - Send.svg" answerDescription="Control - Send.mp3" caption="Send" jump="_SAVE+EXITAPP"/>
       </Choice>
       <Choice img="Control - Cancel.svg" answerDescription="Control - Cancel.mp3" alt="Cancel" jump="_LOOPFORM"/>
     </Choice>
